@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form For WD101</title>
+  <style type="text/css" media="all">
+    form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+form label {
+  margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  padding: 10px;
+  font-size: 16px;
+}
+
+form button[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: blue;
+  color: 
+
+  </style>
+</head>
+<body>
+  <form id="registration-form">
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" required>
+  </div>
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+  </div>
+  <div>
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" required>
+  </div>
+  <div>
+    <label for="password">Password:</label>
+    <input type="password" id="password" required>
+  </div>
+  <button type="submit">Submit</button>
+</form>
+<script type="text/javascript" charset="utf-8">
+  document.getElementById("registration-form").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let dob = new Date(document.getElementById("dob").value);
+  let password = document.getElementById("password").value;
+
+  if (!name) {
+    alert("Please enter your name");
+    return;
+  }
+
+  if (!email) {
+    alert("Please enter your email");
+    return;
+  }
+
+  let today = new Date();
+  let age = today.getFullYear() - dob.getFullYear();
+  if (today.getMonth() < dob.getMonth() || (today.getMonth() === dob.getMonth() && today.getDate() < dob.getDate())) {
+    age--;
+  }
+  if (age < 18 || age > 55) {
+    alert("The entered date of birth is not valid.
+
+</script>
+</body>
+</html>
