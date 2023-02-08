@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form-WD101</title>
+  <style type="text/css" media="all">
+    #form {
+  margin: 50px;
+  padding: 50px;
+  background-color: lightgray;
+  border-radius: 10px;
+}
+
+#entries {
+  margin: 50px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#entries th, td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: left;
+}
+
+  </style>
+</head>
+<body>
+  <form id="form">
+  <input type="text" id="name" placeholder="Name" required><br><br>
+  <input type="email" id="email" placeholder="Email" required><br><br>
+  <input type="password" id="password" placeholder="Password" required><br><br>
+  <input type="date" id="dob" placeholder="DOB" required><br><br>
+  <input type="checkbox" id="terms" required> Accept terms and conditions<br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<table id="entries">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Password</th>
+      <th>DOB</th>
+    </tr>
+  </thead>
+  <tbody id="table-body">
+  </tbody>
+</table>
+<script src="script.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
