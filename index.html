@@ -1,0 +1,67 @@
+ <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Registration</div>
+    <div class="content">
+      <form action="#" name="myForm" onsubmit="return validateForm()" method="post">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input name="name" type="text" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input name="email" type="text" placeholder="Enter your email" required>
+          </div>
+          
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input name="password" type="text" placeholder="Enter your password" required>
+          </div>
+          <div class="input-box">
+            <span class="details">DOB</span>
+            <input name="dob" type="date" placeholder="DD|MM|YYYY" required>
+          </div>
+          
+        </div>
+        <div class="Checkbox">
+          <input type="checkbox" name="agreement" id="dot-1" required>
+          <span class="checkbox-title">Agree & Continue</span>
+          <div class="category">
+            <label for="dot-1">
+            
+          </label>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+      
+       <label class="title" for="entry">Entries</label>
+  <table id="resultsTable">
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Password</th>
+    <th>Date of Birth</th>
+  </tr>
+  <tr>
+    <td id="name"></td>
+    <td id="email"></td>
+    <td id="password"></td>
+    <td id="dob"></td>
+  </tr>
+</table>
+    </div>
+  </div>
+<script src="script.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
